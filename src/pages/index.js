@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/site_style.css'
 import Navbar from '../components/UI/navigation/navbar/navbar'
 import Banner from '../components/UI/banner/banner'
