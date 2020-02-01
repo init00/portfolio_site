@@ -1,0 +1,382 @@
+/* app wide styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: acumin-pro, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* project-1 style */
+.project .img-fluid {
+    max-width: 80%;
+    height: "auto";
+    margin: 100px;
+    background-image: cover;
+}
+
+/* banner */
+.jumbotron
+ {
+    text-align: center;
+    background-color:#FBEDED;
+    height: 485px;
+}
+
+.banner-enclosure .site-heading {
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #F9C2C2;
+}
+
+.banner-enclosure .site-sub-heading {
+    color: #999999;
+    display: inline-block;
+    text-align: center;
+    font-weight: 200;
+    /* font-family: AcuminItalic; */
+}
+
+button.down-arrow {
+    color: #A9A9A9;
+    outline: none;
+    font-weight: lighter;
+    margin-top: 50px;
+    padding-right: 10px;
+    border: none;
+    background-color: #FBEDED;
+    opacity: 30%;
+    transform: scaleX(3.0) scaleY(1.5);
+}
+
+button.down-arrow:hover {
+    text-decoration: none;
+}
+
+.hideBanner {
+    animation: bannerHide 2s;
+    transition: all .5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerHide {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* navbar */
+li a {
+    display: block;
+}
+
+.site-navbar {
+    background-color: white;
+    color: #515050;
+    height: 70px;
+}
+
+.site-navbar ul.navbar-nav > :first-child {
+    margin-left: 12px;
+}
+
+.site-navbar ul.navbar-nav > :last-child {
+    margin-right: 12px;
+}
+
+.site-navbar ul.navbar-nav {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.navbar-brand {
+    margin-top: 7px;
+    color: #515050;
+    font-size: x-large;
+    font-weight: 530;
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+.navbar-brand:hover {
+    color: grey;
+}
+
+a:link, a:visited {
+    color: #515050;
+}
+
+.nav-item a:hover {
+    color: grey;
+}
+
+.nav-item a:active {
+    color: #FEAAAA;
+}
+
+.nav-item a.nav-link.active {
+    color: #FEAAAA;
+}
+
+a.fa-stack {
+    margin-right: 10px;
+    transform: translateY(-25%) scale(1.2);
+}
+
+a.fa-stack > :last-child {
+    margin-right: 10px;
+}
+
+.icon-bg-1 {
+    color: #FBEDED;
+}
+
+.icon-bg-2 {
+    color: #FEAAAA;
+    font-size: 13px;
+}
+
+/*when hover over social buttons*/
+
+a.nav-link:hover i.fa-circle {
+    color: #515050;
+    opacity: 15%;
+}
+
+a.nav-link:hover .icon-bg-2 {
+    color: #282828;
+}
+
+.social-icon .fa-circle {
+    margin-right: 40px;
+}
+
+
+/* card decks */
+.projects {
+    margin-left: 120px;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+.small-card-style {
+    width: 20rem;
+    height: 15rem;
+}
+
+img.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+}
+
+.big-card-style {
+    width: 525px;
+    height: 420px;
+}
+
+/* big cards */
+div.big-card-style div.card {
+    transition: all .2s ease-out;
+}
+
+div.big-card-style div.card:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 4px grey;
+}
+
+.projects-pull-up {
+    /* transform: translateY(-485px);
+    transition: all 2s ease-out; */
+    animation: moveup 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+    from {top: 0px;}
+    to {top: -480px;}
+}
+
+/* small cards */
+div.small-card-style div.card {
+    transition: all .2s ease-out;
+}
+
+div.small-card-style div.card:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 2px 4px grey;
+}
+
+/* frame style */
+.project-frame {
+    max-width: 80%;
+    display: block;
+    text-align: center;
+}
+
+/* frame styling */
+.frame-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+
+/* cv styling */
+.cv-section {
+    background-color: #FCF7F7;
+}
+
+/* process styling */
+.process-section {
+    background-color: #FCF7F7;
+}
+
+/* about styling */
+.about-section {
+    background-color: #FCF7F7;
+}
+
+.about-card .card-text {
+    text-align: center;
+    color: #373636;
+    padding: 7%;
+    margin: 7px;
+    font-weight: 200;
+    background-color: #FCF7F7;
+}
+
+.about-card .card-body {
+    padding: 0px;
+    background-color: #FCF7F7;
+}
+
+.about-story-pic {
+    transform: translateY(-4%);
+}
+
+.about-section .card-deck {
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-top: 50px;
+}
+
+.about-footer {
+    color: grey;
+    padding-left: 520px;
+    margin-top: 0px;
+    transform: translateY(-50%);
+    padding-bottom: 100px;
+}
+
+/* projects-footer */
+.projects-footer {
+    margin: 10px 100px 10px 100px;
+}
+
+.project-footer-text {
+    color: grey;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: 10x;
+}
+
+.footer-card-deck {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+/* project doc button*/
+.project .project-doc-button {
+    display: block;
+    margin-bottom: 80px;
+    color: green;
+    text-align: center;
+}
+
+.project .proj-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px grey;
+    background-color: yellowgreen;
+}
+
+/* spinner */
+.frame-spinner {
+    display: flex;
+    padding-top: 200px;
+    align-content: center;
+    justify-content: center;
+}
+
+.spinner-grow {
+    color: #A9A9A9 ;
+    height: 1rem;
+    width: 1rem;
+    margin: .3rem;
+}
+
+/* research button */
+.rbtn-wrapper {
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+a.research-link {
+    border: 1px #b5651d solid;
+    padding: 10px;
+    font-size: small;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+}
+
+a.research-link:hover {
+    background-color: #b5651d;
+    box-shadow: 2px grey;
+    transform: scale(1.05);
+    outline: none;
+    text-decoration: none;
+}
+
+/* scroll to top styling */
+.la-arrow-up {
+    float: right;
+    transform: scale(2.0);
+    color: black;
+    opacity: 1.0;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: #515050;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .2;
+    cursor: pointer;
+}
+
+.dot-frame {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.dot-project {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.dot:hover {
+    opacity: .5;
+}
