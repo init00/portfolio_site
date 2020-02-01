@@ -9,7 +9,7 @@ const Card = (props) => {
     let redirectUrl = contentUrlMap[projId]['url']
     let link = <Link class="stretched-link"
                         to={redirectUrl}
-                        state = { {id: projId, contentUrl: contentUrlMap }}
+                        state={{id: projId, contentUrl: contentUrlMap }}
                         />
     let img = <img src={content} class="card-img-top" alt="Project"></img>
 
@@ -18,10 +18,7 @@ const Card = (props) => {
         if (cardsElement != null)
         {
             if (!props.showBanner) {
-                console.log("Adding pull-up class")
                 if (!cardsElement.classList.contains("hideBanner")) {
-                    //cardsElement.classList.remove("projects-pull-up")
-                    //void cardsElement.offsetWidth;
                     cardsElement.classList.add("projects-pull-up")
                     cardsElement.style.animationPlayState = "running"
                 }
@@ -29,9 +26,7 @@ const Card = (props) => {
             else {
                 if (cardsElement.classList.contains("projects-pull-up"))
                    {
-                    console.log("Adding animation pause class")
                     cardsElement.style.animationPlayState = "paused"
-                    //cardsElement.style.animationDirection = "reverse"
                    }
             }
         }

@@ -18,7 +18,7 @@ class Frame extends Component {
         if (this.state.loading) {
            loadImage = <Spinner styleClass="frame-spinner"/>
         } else {
-            scrollButton = <span class="dot dot-frame las la-arrow-up" role="button"
+            scrollButton = <span class="dot dot-frame las la-arrow-up"
                             onClick={() => window.scrollTo(0, 0)} />
         }
         return (

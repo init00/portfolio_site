@@ -8,7 +8,6 @@ const Banner = (props) => {
         if (cardsElement != null)
         {
             if (!props.showBanner) {
-                console.log("Adding bannerHide class")
                 if (!cardsElement.classList.contains("hideBanner")) {
                     cardsElement.classList.remove("hideBanner")
                     void cardsElement.offsetWidth;
@@ -17,7 +16,6 @@ const Banner = (props) => {
                 }
             }
         }
-        console.log(cardsElement.classList)
     })
 
     return (

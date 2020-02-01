@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Card from '../card/card'
 
 const Cards = (props) => {

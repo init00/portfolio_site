@@ -4,13 +4,12 @@ import Card from '../UI/card/card'
 const Footer = (props) => {
     let otherProjs = []
     let contentUrlMap = props.contentUrl
-    console.log("From footer: contentUrlMap ", contentUrlMap)
     for (let key in contentUrlMap)
     {
-        console.log("from inside Footer key and curId:  ", key, props.curId, contentUrlMap[key])
         if (key !== props.curId) {
             otherProjs.push(<Card cardSize="small"
                                   id={key}
+                                  key={key}
                                   contentUrl= {{...contentUrlMap}} />)
         }
     }
