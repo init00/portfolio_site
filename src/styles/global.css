@@ -2,11 +2,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: acumin-pro, sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
 
-/* project-1 style */
+/* project style */
 .project .img-fluid {
     max-width: 80%;
     height: "auto";
@@ -34,7 +34,6 @@
     display: inline-block;
     text-align: center;
     font-weight: 200;
-    /* font-family: AcuminItalic; */
 }
 
 button.down-arrow {
@@ -45,7 +44,7 @@ button.down-arrow {
     padding-right: 10px;
     border: none;
     background-color: #FBEDED;
-    opacity: 30%;
+    opacity: .3;
     transform: scaleX(3.0) scaleY(1.5);
 }
 
@@ -139,7 +138,7 @@ a.fa-stack > :last-child {
 
 a.nav-link:hover i.fa-circle {
     color: #515050;
-    opacity: 15%;
+    opacity: .15;
 }
 
 a.nav-link:hover .icon-bg-2 {
@@ -189,8 +188,6 @@ div.big-card-style div.card:hover {
 }
 
 .projects-pull-up {
-    /* transform: translateY(-485px);
-    transition: all 2s ease-out; */
     animation: moveup 2s;
     animation-fill-mode: forwards;
 }
@@ -294,12 +291,6 @@ div.small-card-style div.card:hover {
     margin-bottom: 80px;
     color: green;
     text-align: center;
-}
-
-.project .proj-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 2px grey;
-    background-color: yellowgreen;
 }
 
 /* spinner */

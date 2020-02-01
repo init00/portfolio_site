@@ -5,7 +5,7 @@ import Social from '../../social/social'
 const Navbar = (props) => {
     return (
         <div class="site-navbar">
-            <nav class="navbar fixed-top navbar-enclosure navbar-expand-sm bg-white">
+            <nav class="navbar fixed-top navbar-expand-sm bg-white">
                 <ul class="navbar-nav">
                     <NavItem title="Work" activePage={props.activePage} />
                     <NavItem title="Process" activePage={props.activePage} />
