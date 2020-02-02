@@ -18,17 +18,17 @@ class Frame extends Component {
         if (this.state.loading) {
            loadImage = <Spinner styleClass="frame-spinner"/>
         } else {
-            scrollButton = <span class="dot dot-frame las la-arrow-up"
+            scrollButton = <span className="dot dot-frame las la-arrow-up"
                             onClick={() => window.scrollTo(0, 0)} />
         }
         return (
             <React.Fragment>
                 {scrollButton}
                 {loadImage}
-                <div class="project-frame container">
+                <div className="project-frame container">
                     <img id="project-image" src={this.props.content}
                          onLoad={this.imageHandler}
-                         class="img-fluid frame-content" alt="" />
+                         className="img-fluid frame-content" alt="" />
                 </div>
             </React.Fragment>
         )

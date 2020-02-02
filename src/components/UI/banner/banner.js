@@ -19,19 +19,19 @@ const Banner = (props) => {
     })
 
     return (
-    <div class="banner-enclosure">
-        <div class={classArray.join(" ")} align="center">
-            <h1 class="site-heading">Design</h1>
+    <div className="banner-enclosure">
+        <div className={classArray.join(" ")} align="center">
+            <h1 className="site-heading">Design</h1>
             <br/>
-            <h2 class="site-sub-heading">
-                <div class="row">
-                    <div class="col-2"/>
-                    <div class="col-8">
+            <h2 className="site-sub-heading">
+                <div className="row">
+                    <div className="col-2"/>
+                    <div className="col-8">
                         <p><i>is a two-way bridge connecting user needs and solutions built on the foundation of empathy</i></p>
                     </div>
-                    <div class="col-2" />
-                    <div class="col-6" />
-                    <button class="down-arrow" onClick={props.bannerHandler}>
+                    <div className="col-2" />
+                    <div className="col-6" />
+                    <button className="down-arrow" onClick={props.bannerHandler}>
                         &#8744;
                     </button>
                 </div>

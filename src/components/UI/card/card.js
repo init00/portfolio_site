@@ -34,8 +34,8 @@ const Card = (props) => {
 
     if (props.cardSize === "small") {
         cardSize = (
-            <div class="small-card-style">
-                <div class="card">
+            <div className="small-card-style">
+                <div className="card">
                     {img}
                     {link}
                 </div>
@@ -43,8 +43,8 @@ const Card = (props) => {
         )
     } else {
         cardSize = (
-                <div class="big-card-style">
-                    <div class="project-cards card">
+                <div className="big-card-style">
+                    <div className="project-cards card">
                         {img}
                         {link}
                     </div>

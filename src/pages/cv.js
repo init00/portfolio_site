@@ -7,8 +7,8 @@ const Cv = () => {
   return (
     <div>
         <Navbar activePage="CV"/>
-        <div class="cv-section">
-          <div class="container">
+        <div className="cv-section">
+          <div className="container">
             <Frame content={myCV} />
           </div>
         </div>

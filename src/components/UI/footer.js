@@ -13,11 +13,11 @@ const Footer = (props) => {
                                   contentUrl= {{...contentUrlMap}} />)
         }
     }
-    return (<div class="projects-footer">
-            <p class="project-footer-text">
+    return (<div className="projects-footer">
+            <p className="project-footer-text">
                 <strong>You may also like:<br/></strong>
             </p>
-            <div class="footer-card-deck card-deck container">
+            <div className="footer-card-deck card-deck container">
                 {otherProjs}
             </div>
         </div>)

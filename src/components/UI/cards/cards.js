@@ -2,7 +2,6 @@ import React from 'react'
 import Card from '../card/card'
 
 const Cards = (props) => {
-    let classArray = ["projects"]
     let projDisplay = []
     for (let proj in props.contentUrl) {
         projDisplay.push(<Card showBanner={props.showBanner} id={proj} cardSize="big"
@@ -10,12 +9,12 @@ const Cards = (props) => {
     }
 
     return (
-        <div class={classArray.join(" ")}>
-                <div class="card-deck">
+        <div className="projects container">
+                <div className="card-deck">
                     {projDisplay[0]}
                     {projDisplay[1]}
                 </div>
-                <div class="card-deck">
+                <div className="card-deck">
                     {projDisplay[2]}
                     {projDisplay[3]}
                 </div>

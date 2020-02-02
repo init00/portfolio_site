@@ -61,7 +61,7 @@ class App extends Component {
       let projDisplay = <Cards contentUrl={this.state.projectCoverUrlMap}
                                showBanner={this.state.showBanner} />
       return (
-      <div class="app-enclosure" onScroll={this.bannerClickHandler}>
+      <div className="app-enclosure" onScroll={this.bannerClickHandler}>
         <Navbar activePage="Work" />
         {banner}
         {projDisplay}

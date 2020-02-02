@@ -10,7 +10,7 @@
 .project .img-fluid {
     max-width: 80%;
     height: "auto";
-    margin: 100px;
+    margin: 6.25rem;
     background-image: cover;
 }
 
@@ -19,12 +19,12 @@
  {
     text-align: center;
     background-color:#FBEDED;
-    height: 485px;
+    height: 30.3125rem;
 }
 
 .banner-enclosure .site-heading {
-    margin-top: 50px;
-    font-size: 60px;
+    margin-top: 3.125rem;
+    font-size: 3.75rem;
     font-weight: bold;
     color: #F9C2C2;
 }
@@ -40,8 +40,8 @@ button.down-arrow {
     color: #A9A9A9;
     outline: none;
     font-weight: lighter;
-    margin-top: 50px;
-    padding-right: 10px;
+    margin-top: 3.125rem;
+    padding-right: 0.625rem;
     border: none;
     background-color: #FBEDED;
     opacity: .3;
@@ -71,29 +71,30 @@ li a {
 .site-navbar {
     background-color: white;
     color: #515050;
-    height: 70px;
+    /* background-color: greenyellow; */
+    /* height: 4.375rem; */
 }
 
 .site-navbar ul.navbar-nav > :first-child {
-    margin-left: 12px;
+    margin-left: .75rem;
 }
 
 .site-navbar ul.navbar-nav > :last-child {
-    margin-right: 12px;
+    margin-right: .75rem;
 }
 
 .site-navbar ul.navbar-nav {
-    margin-top: 7px;
-    margin-left: 10px;
+    margin-top: 0.4375rem;
+    margin-left: 0.625rem;
 }
 
 .navbar-brand {
-    margin-top: 7px;
+    margin-top: 0.4375rem;
     color: #515050;
     font-size: x-large;
     font-weight: 530;
-    padding-left: 15px;
-    padding-right: 0px;
+    padding-left: 0.9375rem;
+    padding-right: 0rem;
 }
 
 .navbar-brand:hover {
@@ -122,7 +123,7 @@ a.fa-stack {
 }
 
 a.fa-stack > :last-child {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .icon-bg-1 {
@@ -131,7 +132,7 @@ a.fa-stack > :last-child {
 
 .icon-bg-2 {
     color: #FEAAAA;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 /*when hover over social buttons*/
@@ -146,15 +147,23 @@ a.nav-link:hover .icon-bg-2 {
 }
 
 .social-icon .fa-circle {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 
 /* card decks */
 .projects {
-    margin-left: 120px;
-    margin-right: 70px;
-    margin-top: 30px;
+    margin-top: 1.875rem;
+}
+
+.card-deck {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+
 }
 
 .small-card-style {
@@ -173,8 +182,8 @@ img.card-img-top {
 }
 
 .big-card-style {
-    width: 525px;
-    height: 420px;
+    width: 32.8125rem;
+    height: 26.25rem;
 }
 
 /* big cards */
@@ -194,7 +203,7 @@ div.big-card-style div.card:hover {
 
 @keyframes moveup {
     from {top: 0px;}
-    to {top: -480px;}
+    to {top: -30rem;}
 }
 
 /* small cards */
@@ -216,9 +225,9 @@ div.small-card-style div.card:hover {
 
 /* frame styling */
 .frame-content {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 10px;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    margin-left: .625rem;
 }
 
 /* cv styling */
@@ -240,7 +249,7 @@ div.small-card-style div.card:hover {
     text-align: center;
     color: #373636;
     padding: 7%;
-    margin: 7px;
+    margin: 0.4375rem;
     font-weight: 200;
     background-color: #FCF7F7;
 }
@@ -255,40 +264,40 @@ div.small-card-style div.card:hover {
 }
 
 .about-section .card-deck {
-    margin-left: 140px;
-    margin-right: 140px;
-    padding-top: 50px;
+    margin-left: 8.75rem;
+    margin-right: 8.75rem;
+    padding-top: 3.125rem;
 }
 
 .about-footer {
     color: grey;
-    padding-left: 520px;
-    margin-top: 0px;
+    padding-left: 32.5rem;
+    margin-top: 0rem;
     transform: translateY(-50%);
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 
 /* projects-footer */
 .projects-footer {
-    margin: 10px 100px 10px 100px;
+    margin: .625rem 6.25rem .625rem 6.25rem;
 }
 
 .project-footer-text {
     color: grey;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-top: 10x;
+    margin-bottom: 1.875rem;
+    margin-left: 3.125rem;
+    margin-top: 0.625rem;
 }
 
 .footer-card-deck {
-    margin-left: 20px;
-    margin-bottom: 50px;
+    margin-left: 1.25rem;
+    margin-bottom: 3.125rem;
 }
 
 /* project doc button*/
 .project .project-doc-button {
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     color: green;
     text-align: center;
 }
@@ -296,7 +305,7 @@ div.small-card-style div.card:hover {
 /* spinner */
 .frame-spinner {
     display: flex;
-    padding-top: 200px;
+    padding-top: 12.5rem;
     align-content: center;
     justify-content: center;
 }
@@ -311,8 +320,8 @@ div.small-card-style div.card:hover {
 /* research button */
 .rbtn-wrapper {
     display: flex;
-    margin-top: -40px;
-    margin-bottom: 50px;
+    margin-top: -2.5rem;
+    margin-bottom: 3.125rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -320,10 +329,10 @@ div.small-card-style div.card:hover {
 
 a.research-link {
     border: 1px #b5651d solid;
-    padding: 10px;
+    padding: 0.625rem;
     font-size: small;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     text-decoration: none;
     outline: none;
 }
@@ -370,4 +379,20 @@ a.research-link:hover {
 
 .dot:hover {
     opacity: .5;
+}
+
+/* experimentation */
+.navbar-toggler {
+    color: gray;
+    background-color: gray;
+}
+
+.navbar-toggler-icon {
+    color: black;
+    background-color: white;
+}
+
+.navbar-collapse {
+    
+    background-color: #F9C2C2;
 }

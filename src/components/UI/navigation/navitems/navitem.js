@@ -27,8 +27,8 @@ const Navitem = (props) => {
     let active = checkActive(props.title, props.activePage) ? "active": ""
     let classes = "nav-link " + active
     return (
-        <li class="nav-item">
-            <a class={classes} href={redirectPage}>{props.title}</a>
+        <li className="nav-item">
+            <a className={classes} href={redirectPage}>{props.title}</a>
         </li>
     )
 }
