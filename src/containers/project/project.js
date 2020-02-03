@@ -26,7 +26,7 @@ class Project extends Component {
                                   href="https://issuu.com/anthroresearch/docs/craft_documentation-sambalpuri_folk_dance"
                                   target="_blank">View research document</a>)
             }
-            scrollButton = <span className="dot dot-project las la-arrow-up"
+            scrollButton = <span className="dot las la-arrow-up"
                             onClick={() => window.scrollTo(0, 0)} />
         }
 
@@ -34,7 +34,7 @@ class Project extends Component {
             <div>
                 <Navbar/>
                 <div className="project">
-                    <div className="container">
+                    <div className="project-container">
                         {scrollButton}
                         {loadImage}
                         <img onLoad={this.imageHandler} src={this.props.projDetailed}

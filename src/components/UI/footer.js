@@ -17,7 +17,7 @@ const Footer = (props) => {
             <p className="project-footer-text">
                 <strong>You may also like:<br/></strong>
             </p>
-            <div className="footer-card-deck card-deck container">
+            <div className="footer-card-deck card-deck">
                 {otherProjs}
             </div>
         </div>)

@@ -7,10 +7,8 @@ const Cv = () => {
   return (
     <div>
         <Navbar activePage="CV"/>
-        <div className="cv-section">
-          <div className="container">
+        <div className="wapc-section">
             <Frame content={myCV} />
-          </div>
         </div>
     </div>
     )

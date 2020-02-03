@@ -12,19 +12,14 @@ const About = () => {
                 balance between personal and professional life is important to me.\
                 Outside work I enjoy swimming, Illustration, reading and hanging out\
                 with my friends.")
-  let card1 = (<div className="card">
+  let card1 = (<div className="card about-myimg-card">
                 {imgPic}
-                {/* <div class="about-card">
-                    {imgPic}
-                </div> */}
               </div>)
 
-  let card2 = (<div className="about-card card">
-                <div className="card-body">
-                  <p className="about-card card-text">
+  let card2 = (<div className="card about-intro-card">
+                  <p className="about-card-text">
                     <i>"{intro}"</i>
                   </p>
-                </div>
               </div>)
 
   let contactInfo = (<i>Email- abhilasha.uxdes@gmail.com<br/>
@@ -33,14 +28,14 @@ const About = () => {
   return (
     <div>
       <Navbar activePage="About"/>
-      <div className="about-section">
-        <div className="card-deck">
-          {card1}
-          {card2}
-        </div>
-          <div className="about-story-pic container">
-            <Frame content={myStory} />
+      <div className="wapc-section">
+        <div className="about-card-container">
+          <div className="card-deck about-card-subcontainer">
+            {card1}
+            {card2}
           </div>
+        </div>
+        <Frame content={myStory} />
         <div className="about-footer">
           {contactInfo}
         </div>

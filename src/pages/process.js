@@ -7,10 +7,8 @@ import myProcess from '../../static/DetailedImg/process.jpg'
 const process = () => (
     <div>
         <Navbar activePage="Process"/>
-        <div className="process-section">
-          <div className="container">
+        <div className="wapc-section">
             <Frame content={myProcess} />
-          </div>
         </div>
     </div>
     )
