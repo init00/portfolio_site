@@ -36,9 +36,9 @@ class Project extends Component {
                 <div className="project">
                     <div className="project-container">
                         {scrollButton}
-                        {loadImage}
                         <img onLoad={this.imageHandler} src={this.props.projDetailed}
                              className="img-fluid" alt="" />
+                        {loadImage}
                     </div>
                     <div className="rbtn-wrapper">
                         {researchBtn}
