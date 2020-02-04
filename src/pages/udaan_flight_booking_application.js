@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import projDetailed4 from '../../static/DetailedImg/projDetailed4.jpg'
 import Project from '../containers/project/project'
+import contentUrlMap from '../constants/contentUrlMap'
 
 const Udaan = ({location}) => {
-    const [id, setId] = useState(0)
-    const [contentUrl, setContentUrl] = useState({})
+    const [id, setId] = useState("4")
+    const [contentUrl, setContentUrl] = useState(contentUrlMap)
     useEffect(() => {
-        if (typeof window === 'undefined') {
-            console.log("warn: location prop is not available.")
-            return;
-          }
+      if (location.state) {
         setId(location.state.id)
         setContentUrl(location.state.contentUrl)
-        }
-    )
-    console.log("Location value Bikeratti", {location})
+      }
+    })
     return <Project projDetailed={projDetailed4} id={id}
                     contentUrl={contentUrl}
             />
