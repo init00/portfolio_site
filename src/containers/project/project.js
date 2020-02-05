@@ -9,6 +9,13 @@ class Project extends Component {
         this.state = {loading: true}
     }
 
+    componentDidMount() {
+        let img = document.getElementById("project-pic")
+        img.addEventListener('load', this.imageHandler.bind(this), true)
+        img.src=this.props.projDetailed
+    }
+
+
     imageHandler = (event) => {
        event.preventDefault()
        this.setState(prevState => ({loading: !prevState.loading}))
@@ -36,8 +43,8 @@ class Project extends Component {
                 <div className="project">
                     <div className="project-container">
                         {scrollButton}
-                        <img onLoad={this.imageHandler} src={this.props.projDetailed}
-                             className="img-fluid" alt="" />
+                        <img id="project-pic" src=""
+                            className="img-fluid" alt="" />
                         {loadImage}
                     </div>
                     <div className="rbtn-wrapper">

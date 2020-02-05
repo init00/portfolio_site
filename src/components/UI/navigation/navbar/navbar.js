@@ -7,7 +7,7 @@ const Navbar = (props) => {
         <div className="site-navbar">
             <nav className="navbar nav-enclosure fixed-top navbar-expand-sm bg-white">
                 <div>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                    <div className="collapse navbar-collapse" id="collapsibleNavbar2">
                         <ul className="navbar-nav">
                             <NavItem title="Work" activePage={props.activePage} />
                             <NavItem title="Process" activePage={props.activePage} />
@@ -20,11 +20,11 @@ const Navbar = (props) => {
                     <a className="navbar-brand" href="/">Abhilasha Tripathi</a>
                 </div>
                 <div>
-                <div class="social-enclosure">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <i class="las la-bars" onClick={event => event.preventDefault()}></i>
+                <div className="social-enclosure">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i className="las la-bars" onClick={event => event.preventDefault()}></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                    <div className="collapse navbar-collapse" id="collapsibleNavbar2">
                         <ul className="navbar-nav">
                             <Social btnType="linkedin" />
                             <Social btnType="instagram" />
@@ -34,9 +34,9 @@ const Navbar = (props) => {
                 </div>
                 </div>
             </nav>
-            <div class="collapse navbar-collapse showHideModal" id="collapsibleNavbar">
-                <div class="collapsible-cross">
-                    
+            <div className="collapse navbar-collapse showHideModal" id="collapsibleNavbar">
+                <div className="collapsible-cross">
+
                 </div>
                 <div className="collapsible-wpac">
                     <ul className="navbar-nav">

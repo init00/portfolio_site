@@ -7,9 +7,15 @@ class Frame extends Component {
         this.state = {loading: true}
     }
 
+    componentDidMount() {
+        let img = document.getElementById("frame-pic")
+        img.addEventListener('load', this.imageHandler.bind(this), true)
+        img.src=this.props.content
+    }
+
     imageHandler = (event) => {
        event.preventDefault()
-       this.setState(prevState => ({loading: !prevState}))
+       this.setState(prevState => ({loading: !prevState.loading}))
     }
 
     render(props) {
@@ -22,11 +28,11 @@ class Frame extends Component {
                             onClick={() => window.scrollTo(0, 0)} />
         }
         return (
-            <div className="wapc-container">
+             <div className="wapc-container">
                 <div className="wapc-subcontainer">
                     {scrollButton}
-                    <img src={this.props.content} onLoad={this.imageHandler}
-                         className="img-fluid frame-content" alt="" />
+                    <img id="frame-pic" src=""
+                        className="img-fluid frame-content" alt="" />
                     {loadImage}
                 </div>
             </div>
