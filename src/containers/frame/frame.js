@@ -9,7 +9,7 @@ class Frame extends Component {
 
     imageHandler = (event) => {
        event.preventDefault()
-       this.setState({loading: false})
+       this.setState(prevState => ({loading: !prevState}))
     }
 
     render(props) {
@@ -25,11 +25,8 @@ class Frame extends Component {
             <div className="wapc-container">
                 <div className="wapc-subcontainer">
                     {scrollButton}
-                    <div>
-                        <img src={this.props.content}
-                            onLoad={this.imageHandler}
-                            className="img-fluid frame-content" alt="" />
-                    </div>
+                    <img src={this.props.content} onLoad={this.imageHandler}
+                         className="img-fluid frame-content" alt="" />
                     {loadImage}
                 </div>
             </div>

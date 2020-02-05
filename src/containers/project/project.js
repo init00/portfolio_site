@@ -11,7 +11,7 @@ class Project extends Component {
 
     imageHandler = (event) => {
        event.preventDefault()
-       this.setState({loading: false})
+       this.setState(prevState => ({loading: !prevState.loading}))
     }
 
    render (props) {
