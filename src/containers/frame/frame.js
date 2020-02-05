@@ -25,12 +25,12 @@ class Frame extends Component {
             <div className="wapc-container">
                 <div className="wapc-subcontainer">
                     {scrollButton}
-                    {loadImage}
                     <div>
                         <img src={this.props.content}
                             onLoad={this.imageHandler}
                             className="img-fluid frame-content" alt="" />
                     </div>
+                    {loadImage}
                 </div>
             </div>
         )
